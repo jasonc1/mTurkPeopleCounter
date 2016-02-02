@@ -1,0 +1,12 @@
+body{
+	background-color: #eee;
+}
+.container{
+	background-color: white;
+	margin-top: 5%;
+	padding: 2em;
+}
+
+p#instructions{
+	margin-top: -15px;
+}
