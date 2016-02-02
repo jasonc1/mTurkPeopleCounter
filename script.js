@@ -36,19 +36,7 @@ function resetClick(i){
         document.getElementById(clicksTemp[i]).innerHTML = clicks[i];
     }
 
-function createImageOnCanvas(imageId, i) {
-    canvas[i].style.display = "block";
-        document.getElementById("images").style.overflowY = "hidden";
-            var img = new Image(300,300);
-    img.src = document.getElementById(imageId).src;
-    context[i].drawImage(img, (0), (0));
-    //onload....
 
-    // document.getElementById(clearTemp[i]).addEventListener('click', function() {
-    // context[i].clearRect(0, 0, canvas[i].width, canvas[i].height);
-    // resetClick(i);
-    // }, false);
-}
 
 function clearClicks(i){
     console.log(i);
