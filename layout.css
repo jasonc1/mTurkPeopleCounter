@@ -1,12 +1,28 @@
 body{
 	background-color: #eee;
+
 }
 .container{
 	background-color: white;
 	margin-top: 5%;
 	padding: 2em;
+	margin-bottom: 5%;
 }
 
 p#instructions{
 	margin-top: -15px;
 }
+
+img{
+	width: 100%;
+}
+
+canvas#canvas1{
+  border-style: solid;
+  background: url(https://lh5.googleusercontent.com/nslvYHf3JkljDm9nL8h8tsnLRaN3Uq9Pp4zsBDsdCRoLrH3Ypg92QwV-MUxgza3gXtQRhlZWRlzdX5sV5f-81yjjCy97cxVrIwMsIspdOiIHtuHRtBfV0Rwa--z1zIiWfoojUew);
+  background-size: no-repeat;
+}​
+
+
+
+
