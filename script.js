@@ -53,7 +53,7 @@ function draw(e, i) {
     context[i].fillStyle = "red";
     context[i].beginPath();
     console.log(posx + " " + posy);
-    context[i].arc(posx, posy, 10, 0, 2*Math.PI);
+    context[i].arc(posx, posy, 2, 0, 2*Math.PI);
     context[i].fill();
     click(i);
     console.log(i);
