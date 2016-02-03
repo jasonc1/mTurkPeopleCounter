@@ -151,8 +151,14 @@ function validateForm(){
         return false;
     }
 
-    
 
+
+    var mTurkID = document.forms["mturk_form"]["mTurkID"].value;
+    console.log(mTurkID);
+    if(mTurkID == null || mTurkID == ""){
+        alert("Please write down your Mechanical Turk Worker ID");
+        return false;
+    }
 
 
 }
