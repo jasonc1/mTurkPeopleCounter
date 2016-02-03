@@ -29,6 +29,7 @@ var clearVar = ["clear0", "clear1", "clear2", "clear3", "clear4", "clear5", "cle
 
 function click(i){
     clicks[i] += 1;
+
     document.getElementById(clicksTemp[i]).innerHTML = clicks[i];
 }
 function resetClick(i){
@@ -40,7 +41,6 @@ function resetClick(i){
 
 function clearClicks(i){
     console.log(i);
-    console.log(context[i]);
     context[i].clearRect(0, 0, canvas[i].width, canvas[i].height);
     resetClick(i);
 }
@@ -80,7 +80,82 @@ window.draw = draw;
 
 //===================================BASIC VALIDATIONS===================================
 
+function validateForm(){
 
+
+// for(i=0; i<7; i++){
+//         var clicks = clicks[i];
+//         console.log("clicks: " + clicks[i]);
+//         var count = document.forms["mturk_form"]["image" + i].value;
+//         console.log("count: " + count[i]);
+//         if(count[i] == null || count[i] != clicks[i]){
+//             alert("image " + i + " people count mismatch");
+//             return false;
+//         }
+//     }
+    
+    var clicks0 = clicks[0];
+    console.log("clicks: " + clicks[0]);
+    var count0 = document.forms["mturk_form"]["image0"].value;
+    console.log("count: " + count0);
+    if(count0 == null || count0 != clicks0){
+        alert("image 1 | people count mismatch");
+        return false;
+    }
+    var clicks1 = clicks[1];
+    console.log("clicks: " + clicks[1]);
+    var count1 = document.forms["mturk_form"]["image1"].value;
+    console.log("count: " + count1);
+    if(count1 == null || count1 != clicks1){
+        alert("image 2 | people count mismatch");
+        return false;
+    }
+    var clicks2 = clicks[2];
+    console.log("clicks: " + clicks[2]);
+    var count2 = document.forms["mturk_form"]["image2"].value;
+    console.log("count: " + count2);
+    if(count2 == null || count2 != clicks2){
+        alert("image 3 | people count mismatch");
+        return false;
+    }
+    var clicks3 = clicks[3];
+    console.log("clicks: " + clicks[3]);
+    var count3 = document.forms["mturk_form"]["image3"].value;
+    console.log("count: " + count3);
+    if(count3 == null || count3 != clicks3){
+        alert("image 4 | people count mismatch");
+        return false;
+    }
+    var clicks4 = clicks[4];
+    console.log("clicks: " + clicks[4]);
+    var count4 = document.forms["mturk_form"]["image4"].value;
+    console.log("count: " + count4);
+    if(count4 == null || count4 != clicks4){
+        alert("image 5 | people count mismatch");
+        return false;
+    }
+    var clicks5 = clicks[5];
+    console.log("clicks: " + clicks[5]);
+    var count5 = document.forms["mturk_form"]["image5"].value;
+    console.log("count: " + count5);
+    if(count5 == null || count5 != clicks5){
+        alert("image 6 | people count mismatch");
+        return false;
+    }
+    var clicks6 = clicks[6];
+    console.log("clicks: " + clicks[6]);
+    var count6 = document.forms["mturk_form"]["image6"].value;
+    console.log("count: " + count6);
+    if(count6 == null || count6 != clicks6){
+        alert("image 7 | people count mismatch");
+        return false;
+    }
+
+    
+
+
+
+}
 //MAKE SURE TO VALIDATE INPUT WITH CLICK#
 
 
