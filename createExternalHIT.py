@@ -16,9 +16,9 @@ APPROVAL_DELAY = 60*60*2  # How long after the task is completed will the worker
 
 
 # HIT title (as it will appear on the public listing)
-TITLE = 'People Counter'
+TITLE = 'People Counter WITH BONUSES'
 # Description of the HIT that workers will see when deciding to accept it or not
-DESCRIPTION = 'Count out how many people there are in each image. There are 7 images, and this should take no more than 10 minutes! You will get 10 cents for completion, but more money from bonuses'
+DESCRIPTION = 'Count out how many people there are in each image. There are 7 images, and this should take no more than 10 minutes! You will get 10 cents for completion, but more money can be earned based on your accuracy AS A BONUS.'
 # Search terms for the HIT posting
 KEYWORDS = ['image', 'counting', 'short']
 
