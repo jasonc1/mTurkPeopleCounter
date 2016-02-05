@@ -98,7 +98,7 @@ function validateForm(){
     console.log("clicks: " + clicks[0]);
     var count0 = document.forms["mturk_form"]["image0"].value;
     console.log("count: " + count0);
-    if(count0 == null || count0 != clicks0){
+    if(count0 == null || count0 != clicks0 || count0 == ""){
         alert("image 1 | people count mismatch");
         return false;
     }
@@ -106,7 +106,7 @@ function validateForm(){
     console.log("clicks: " + clicks[1]);
     var count1 = document.forms["mturk_form"]["image1"].value;
     console.log("count: " + count1);
-    if(count1 == null || count1 != clicks1){
+    if(count1 == null || count1 != clicks1 || count1 == ""){
         alert("image 2 | people count mismatch");
         return false;
     }
@@ -114,7 +114,7 @@ function validateForm(){
     console.log("clicks: " + clicks[2]);
     var count2 = document.forms["mturk_form"]["image2"].value;
     console.log("count: " + count2);
-    if(count2 == null || count2 != clicks2){
+    if(count2 == null || count2 != clicks2 || count2 == ""){
         alert("image 3 | people count mismatch");
         return false;
     }
@@ -122,7 +122,7 @@ function validateForm(){
     console.log("clicks: " + clicks[3]);
     var count3 = document.forms["mturk_form"]["image3"].value;
     console.log("count: " + count3);
-    if(count3 == null || count3 != clicks3){
+    if(count3 == null || count3 != clicks3 || count3 == ""){
         alert("image 4 | people count mismatch");
         return false;
     }
@@ -130,7 +130,7 @@ function validateForm(){
     console.log("clicks: " + clicks[4]);
     var count4 = document.forms["mturk_form"]["image4"].value;
     console.log("count: " + count4);
-    if(count4 == null || count4 != clicks4){
+    if(count4 == null || count4 != clicks4 || count4 == ""){
         alert("image 5 | people count mismatch");
         return false;
     }
@@ -138,7 +138,7 @@ function validateForm(){
     console.log("clicks: " + clicks[5]);
     var count5 = document.forms["mturk_form"]["image5"].value;
     console.log("count: " + count5);
-    if(count5 == null || count5 != clicks5){
+    if(count5 == null || count5 != clicks5 || count5 == ""){
         alert("image 6 | people count mismatch");
         return false;
     }
@@ -146,7 +146,7 @@ function validateForm(){
     console.log("clicks: " + clicks[6]);
     var count6 = document.forms["mturk_form"]["image6"].value;
     console.log("count: " + count6);
-    if(count6 == null || count6 != clicks6){
+    if(count6 == null || count6 != clicks6 || count6 == ""){
         alert("image 7 | people count mismatch");
         return false;
     }
