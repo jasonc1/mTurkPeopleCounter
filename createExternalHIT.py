@@ -5,28 +5,28 @@ from boto.mturk.question import ExternalQuestion
 ######  CONFIGURATION PARAMETRS  ######
 
 SANDBOX = True  # Select whether to post to the sandbox (using fake money), or live MTurk site (using REAL money)
-HIT_URL = "http://census.stanford.edu/client/demo/maintask.html"  # Provide the URL that you want workers to sent sent to complete you task
+HIT_URL = "https://jasonc1.github.io/mTurkPeopleCounter/"  # Provide the URL that you want workers to sent sent to complete you task
 
-NUMBER_OF_HITS = 3  # Number of different HITs posted for this task
-NUMBER_OF_ASSIGNMENTS = 50  # Number of tasks that DIFFERENT workers will be able to take for each HIT
+NUMBER_OF_HITS = 1  # Number of different HITs posted for this task
+NUMBER_OF_ASSIGNMENTS = 10  # Number of tasks that DIFFERENT workers will be able to take for each HIT
 LIFETIME = 60 * 60 * 24  # How long that the task will stay visible if not taken by a worker (in seconds)
-REWARD = 0.04  # Base payment value for completing the task (in dollars)
+REWARD = 0.05 # Base payment value for completing the task (in dollars)
 DURATION = 60*5  # How long the worker will be able to work on a single task (in seconds)
 APPROVAL_DELAY = 60*60*2  # How long after the task is completed will the worker be automatically paid if not manually approved (in seconds)
 
 
 # HIT title (as it will appear on the public listing)
-TITLE = 'Fill in a title for the HIT posting'
+TITLE = 'People Counter'
 # Description of the HIT that workers will see when deciding to accept it or not
-DESCRIPTION = 'Fill in a more detailed explaination of the task that needs to be performed (1-3 sentences should be enough).'
+DESCRIPTION = 'Count out how many people there are in each image. There are 7 images, and this should take no more than 10 minutes!'
 # Search terms for the HIT posting
-KEYWORDS = ['example', 'test', 'Mechanical Turk']
+KEYWORDS = ['image', 'counting', 'short']
 
 
 # Your Amazon Web Services Access Key (private)
-AWS_ACCESS_KEY = '' # <-- TODO: Enter your access key here
+AWS_ACCESS_KEY = 'AKIAJMQCE3SVBBRQ345Q' # <-- TODO: Enter your access key here
 # Your Amazon Web Services Secret Key (private)
-AWS_SECRET_KEY = '' # <-- TODO: Enter your private key here
+AWS_SECRET_KEY = 'S11HKrgcxmHMZZ9O+DknopjXHNicupDOsJjhcTis' # <-- TODO: Enter your private key here
 
 #######################################
 
